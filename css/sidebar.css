@@ -1,0 +1,58 @@
+.sidebar{
+    color: rgba(0, 0, 0, 0.8);
+}
+.sidebar .shopee-search{
+    margin: 13px 0  ;
+}
+.shopee-search .shopee-search-filter-status__text{
+    font-size: 19px;
+    font-weight: 700;
+
+}
+.shopee-search .fa-filter{
+    padding: 5px 0;
+    margin-right: 5px;
+}
+.sidebar .shopee-filter-group{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+}
+.sidebar .shopee-filter-group .shopee-filter-group_header{
+    margin-bottom: .625rem;
+    font-weight: 500;
+}
+.sidebar .shopee-checkbox-filter{
+    padding-top: 5px;
+    padding-bottom:5px ;
+}
+.sidebar .btn-show_more .fa-chevron-down{
+    margin-left: 4px;
+}
+.sidebar .shopee-price-range-filter .shopee-price-range-filter__range-line{
+    height: 2px;
+    background-color: #ccc;
+    margin: 15px 5px;
+    padding: 0 5px;
+}
+.sidebar .shopee-price-range-filter .shopee-button__apply{
+    margin: 1.25rem 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 0;
+}
+.sidebar .shopee-button-delete__options{
+    background-color: rgb(238, 77, 45);
+    margin: 1.25rem 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 0;
+}
+
+
+
+

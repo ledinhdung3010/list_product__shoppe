@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/content.css">
+</head>
+<body>
+    <div class="list_product">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 sidebar">
+                        <div class="shopee-search d-flex">
+                            <i class="fa-solid fa-filter"></i>
+                            <h2 class="shopee-search-filter-status__text">BỘ LỌC TÌM KIẾM</h2>
+                        </div>
+                        <div class="shopee-filter-group shopee-facet-filter">
+                            <p class="shopee-filter-group__header">Theo Danh Mục</p>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Thời trang nam (960)
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Phụ kiện thêm (50)
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Thời trang trẻ em
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                Bông tai (7k+)
+                                </label>
+                            </div>
+                            <button class="btn btn-show_more btn-show-more__facet">Thêm
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="shopee-filter-group shopee-brands-filter">
+                            <p class="shopee-filter-group__header">Thương hiệu</p>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    TLEE JEWELRY
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    GEMY SILVER
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    HELI SILVER
+                                </label>
+                            </div>
+                            <div class="shopee-checkbox-filter form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    TNJ TRUONG NHUNG JEWELRY
+                                </label>
+                            </div>
+                            <button class="btn btn-show_more btn-show-more__brands">Thêm
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="shopee-filter-group shopee-price-range-filter">
+                            <p class="shopee-filter-group__header">Khoảng Giá</p>
+                            <div class="shopee-price-range-filter__inputs d-flex">
+                                <input type="text" aria-label="" maxlength="13" class="form-control" placeholder="₫ TỪ" value="">
+                                <div class="shopee-price-range-filter__range-line"></div>
+                                <input type="text" aria-label="" maxlength="13" class="form-control" placeholder="₫ ĐẾN" value="">
+                            </div>
+                            <button class="shopee-button__apply btn btn-primary" aria-label="">Áp dụng</button>
+                        </div>
+                        <button class="shopee-button-delete__options btn" aria-label="">Xóa tất cả</button>
+                    </div>
+                    <div class="col-md-10 content">
+                        <h1 class="shopee-search-result-header d-flex">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="shopee-search-result-header__text">Kết quả tìm kiếm cho từ khoá 
+                                <span class="shopee-search-result-header__text-highlight">'khuyên tai nam bạc'</span>
+                            </span>
+                        </h1>
+                        <div class="shopee-sort-bar">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-2 shopee-sort-bar__label btn">Sắp xếp theo</div>
+                                    <div class="col-md-6 shopee-sort-by-options">
+                                        <section class="shopee-sort-by-options__option-group d-flex">
+                                            <button aria-label="" aria-pressed="true" class="shopee-sort-by-options__option shopee-sort-by-options__option--selected btn"><span aria-hidden="true">Liên quan</span></button>
+                                            <button aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Mới nhất</span></button>
+                                            <button aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Bán chạy</span></button>
+                                        </section>
+                                    </div>
+                                    <div class="col-md-2 select_price mx-3 d-flex">
+                                        <label for="exampleFormControlSelect1" class="text-select">Giá</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option value="" selected></option>
+                                            <option value="">Giá cao đến thấp</option>
+                                            <option value="">Giá thấp đến cao</option>
+                                        </select>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="shopee-search-item-result__items">
+
+                            <div class="row list-items">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+                            <div class="row list-items">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+                            <div class="row list-items">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+                            <div class="row list-items">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+                            <div class="row list-items">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                    <div class=" inf-product">
+                                        <img width="100%" height="250px" src="./img/d652c0b51bca7db8113ffdc261a8ef00.jpg" class="img-product" alt="">
+                                        <div class="text-product">
+                                            <a href="" class="name-product">Khuyên tai MAYEBE LAVEND Bông tai Tròn...</a>
+                                            <div class="price">
+                                                <span class="text-product__commont unit">đ</span>
+                                                <span class="text-product__commont price_sell">6000</span>
+                                                <span class=cost>đ8000</span>
+                                                <span class="percent-discount">-50%</span>
+                                            </div>
+                                            <div class="text-sold">
+                                                Đã bán 500
+                                            </div>
+                                        </div>
+                                        <div class="similar-product">
+                                            <p class="similar-product__text">Tìm sản phẩm tương tự</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </div>
+                           
+                        </div>
+                        <div class="shopee-page-controller full-height d-flex justify-content-center align-items-center">
+                            <div class="row">
+                                <div class="list-page d-flex">
+                                    <button class="btn-prev btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button class="page-item btn selected">1</button>
+                                    <button class="page-item btn ">2</button>
+                                    <button class="page-item btn ">3</button>
+                                    <button class="page-item btn ">...</button>
+                                    <button  class="btn-next btn "><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+   
+        
+</body>
+</html>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+
