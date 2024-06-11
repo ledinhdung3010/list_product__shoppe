@@ -57,3 +57,13 @@ $('.btn-next').on('click', function() {
         nextBtn.addClass('selected');
     }
 });
+$(document).ready(function() {
+    var nameProduct = $('.name-product');
+
+    if (nameProduct.outerHeight() >= 50) {
+        var originalText = nameProduct.text().trim();
+        var truncatedText = originalText.substring(0, Math.min(originalText.length, 20)); // Điều chỉnh chiều dài tối đa ở đây
+        truncatedText = truncatedText.substring(0, Math.min(truncatedText.length, truncatedText.lastIndexOf(" ")));
+        nameProduct.text(truncatedText + '...'); // Thêm dấu ba chấm
+    }
+});
