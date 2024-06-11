@@ -6,3 +6,6 @@
     margin-top: 1.25rem;
 
 }
+.container-siderbar__mobile{
+    display: none;
+}

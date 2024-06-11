@@ -15,11 +15,18 @@
         <div class="container">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-2 sidebar">
-                        <div class="shopee-search d-flex">
+                    <div class="container-siderbar__mobile">
+                        <div class="shopee-search__mobile d-flex">
                             <i class="fa-solid fa-filter"></i>
                             <h2 class="shopee-search-filter-status__text">BỘ LỌC TÌM KIẾM</h2>
                         </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="col-md-2 sidebar sidebar-mobile">
+                            <div class="shopee-search d-flex">
+                                <i class="fa-solid fa-filter"></i>
+                                <h2 class="shopee-search-filter-status__text">BỘ LỌC TÌM KIẾM</h2>
+                            </div>
                         <div class="shopee-filter-group shopee-facet-filter">
                             <p class="shopee-filter-group__header">Theo Danh Mục</p>
                             <div class="shopee-checkbox-filter form-check">
@@ -99,17 +106,15 @@
                             </span>
                         </h1>
                         <div class="shopee-sort-bar">
-                            <div class="container">
                                 <div class="row">
-                                    <div class="col-md-2 shopee-sort-bar__label btn">Sắp xếp theo</div>
-                                    <div class="col-md-6 shopee-sort-by-options">
+                                    <div class="col-6 col-md-7 shopee-sort-by-options">
                                         <section class="shopee-sort-by-options__option-group d-flex">
-                                            <button aria-label="" aria-pressed="true" class="shopee-sort-by-options__option shopee-sort-by-options__option--selected btn"><span aria-hidden="true">Liên quan</span></button>
-                                            <button aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Mới nhất</span></button>
-                                            <button aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Bán chạy</span></button>
+                                            <a aria-label="" aria-pressed="true" class="shopee-sort-by-options__option shopee-sort-by-options__option--selected btn"><span aria-hidden="true">Liên quan</span></a>
+                                            <a aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Mới nhất</span></a>
+                                            <a aria-label="" aria-pressed="false" class="shopee-sort-by-options__option btn"><span aria-hidden="true">Bán chạy</span></a>
                                         </section>
                                     </div>
-                                    <div class="col-md-2 select_price mx-3 d-flex">
+                                    <div class="col-6 col-md-4 select_price mx-3 d-flex">
                                         <label for="exampleFormControlSelect1" class="text-select">Giá</label>
                                         <select class="form-control" id="exampleFormControlSelect1">
                                             <option value="" selected></option>
@@ -119,7 +124,7 @@
                                         <i class="fa-solid fa-chevron-down"></i>
                                     </div>
                                 </div>
-                            </div>
+                           
                         </div>
                         
                         
@@ -545,7 +550,7 @@
                             
                             
                             </div>
-                            
+
                            
                         </div>
                         <div class="shopee-page-controller full-height d-flex justify-content-center align-items-center">

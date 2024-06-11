@@ -28,7 +28,11 @@
     background-color: #fff;
     padding: 0.5rem .9375rem;
     margin-left: 10px;
+    white-space: nowrap;
    
+}
+.shopee-sort-bar .shopee-sort-bar__label{
+    white-space: nowrap;
 }
 .shopee-sort-bar .shopee-sort-by-options__option-group .shopee-sort-by-options__option--selected{
     background-color: rgb(238, 77, 45);
@@ -41,6 +45,7 @@
     position: relative;
     height: 2.125rem;
     margin-top: 3px;
+    margin-left: 20px;
 }
 .shopee-sort-bar .select_price .text-select{
     padding: 5px 0;
@@ -52,7 +57,7 @@
     cursor: pointer;
     display: flex;
     height: 2.125rem;
-    min-width: 200px;
+    min-width:200px;
     padding: 5px;
     padding-bottom: 10px;
     border: none;
@@ -154,10 +159,13 @@
     background-color:rgb(238, 77, 45);
     color: #fff;
 }
+.container-siderbar__mobile{
+    display: none;
+}
 @media (max-width: 768px) {
     .name-product {
         height: 50px; /* Điều chỉnh theo ý muốn */
-        overflow: hidden; 
+        overflow: hidden;  
     }
     .shopee-sort-bar .shopee-sort-by-options{
         padding: 20px 0;
@@ -173,5 +181,60 @@
     }
     .shopee-page-controller .list-page .btn{
         padding:10px 18px ;
+    }
+    .container-fluid .shopee-search{
+        display: none !important;
+    }
+    .container-siderbar__mobile{
+        display: block;
+        position: fixed;
+        top: 0;
+        height: 50px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+    }
+    .container-fluid .sidebar{
+        display: none;
+    }
+    .shopee-search__mobile .shopee-search-filter-status__text{
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .container-fluid .content{
+        margin-top: 30px;
+    }
+    .container-fluid .sidebar-mobile{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 50px;
+        background-color: #fff;
+        width: 200px;
+        z-index: 99;
+        overflow:auto;
+    }
+    .shopee-search__mobile .fa-filter{
+        padding: 5px 0;
+        margin-right: 5px;
+    }
+    .content .shopee-sort-bar{
+        padding: 10px;
+    }
+    .shopee-sort-bar .shopee-sort-by-options__option-group .shopee-sort-by-options__option{
+       padding: 5px;
+       
+    }
+    .overlay {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0.5;
+        z-index: 1;
+        display: none;
     }
 }

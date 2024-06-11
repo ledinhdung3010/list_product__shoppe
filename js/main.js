@@ -67,3 +67,19 @@ $(document).ready(function() {
         nameProduct.text(truncatedText + '...'); // Thêm dấu ba chấm
     }
 });
+$('.container-siderbar__mobile').on('click', function() {
+    var sidebar = $('.container-fluid .sidebar');
+    var content = $('.container-fluid .overlay');
+
+    if (sidebar.is(':visible')) {
+        sidebar.hide();
+        content.css("display", "none");
+    } else {
+        sidebar.show();
+        content.css("display", "block");
+    }
+});
+$('.container-fluid .overlay').on('click',function(){
+    $('.container-fluid .overlay').css('display','none')
+    $('.container-fluid .sidebar').css('display','none');
+})
